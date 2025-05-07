@@ -1,0 +1,76 @@
+/* Services.css */
+
+/* Glavni kontejner za usluge */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  
+  /* Naslov za usluge */
+  .services-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  
+  /* Stil za kartice usluga */
+  .services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatski raspored kartica */
+    gap: 2rem;
+  }
+  
+  /* Stil za svaku karticu */
+  .service-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efekat na karticu kada se mišem pređe preko nje */
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Naslov kartice */
+  .service-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Opis kartice */
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Stil za mobilne uređaje */
+  @media (max-width: 768px) {
+    .services-container {
+      padding: 2rem 1rem;
+    }
+  
+    .services-container h2 {
+      font-size: 2rem;
+    }
+  
+    .service-title {
+      font-size: 1.5rem;
+    }
+  
+    .service-description {
+      font-size: 0.9rem;
+    }
+  }
+  

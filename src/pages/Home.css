@@ -1,0 +1,27 @@
+.home-container {
+  background-image: url('/images/cathedral.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* Koristi visinu ekrana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+

@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+}
+
+.MainLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Osiguraj da layout zauzima celu visinu ekrana */
+}
+
+.content-container {
+  flex-grow: 1; /* Omogućava da sadržaj raste između header-a i footer-a */
+  padding-bottom: 60px; /* Dodaj dovoljno prostora za footer */
+}
+* {
+  box-sizing: border-box; /* Ovo osigurava da margin i padding ne prouzrokuju nepoželjno širenje elemenata */
+}
+
+
+
+/* Ove klase se mogu koristiti globalno */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+
+
+/* Navigacija - Header */
+.navbar-custom {
+  background-color: #e9f1f7; /* Svetla pastelna plava boja - meka i umirujuća */
+ 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Meka senka za moderan izgled */
+  width: 100%; /* Omogućava da navbar zauzme celu širinu */
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a90e2 !important; /* Svetlo plava za brand, kontrastna ali nežna */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar-custom .nav-link {
+  color: #dbdada !important; /* Tamniji tekst za linkove */
+  font-size: 1.1rem;
+  margin-left: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #4a90e2 !important; /* Akcenat boja pri hoveru - svetlo plava */
+  text-decoration: underline;
+}
+
+.content-container {
+  padding-bottom: 60px; /* Dodaj dovoljno prostora za footer */
+}
+
+/* Footer.css */
+.footer {
+  padding: 5px 0;  /* Manji padding */
+  font-size: 0.75rem;  /* Manji font */
+  background-color: #343a40; /* Tamna pozadina */
+  width: 100%; /* Širina footer-a na 100% ekrana */
+  position: relative;  /* Osiguraj da footer bude na dnu */
+  bottom: 0;  /* Pozicionira footer na dnu ekrana */
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .container {
+  max-width: 100%;  /* Uklanjanje maksimalne širine */
+  margin: 0 auto;  /* Centriranje */
+  text-align: center;  /* Centriranje teksta */
+}

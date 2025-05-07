@@ -1,0 +1,91 @@
+/* Contact Section Styling */
+
+.container {
+  animation: fadeInUp 0.8s ease;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+form .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  transition: border-color 0.3s;
+}
+
+form .form-control:focus {
+  border-color: #343a40;
+  box-shadow: none;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #000;
+  transform: scale(1.03);
+}
+
+/* Contact Info */
+.contact-info h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info svg {
+  color: #343a40;
+}
+
+/* Social Icons */
+.contact-info a {
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* Map */
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+}
+
+/* Animacija ulaska */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
