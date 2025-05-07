@@ -1,12 +1,41 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 2. Kako postaviti `README.md` na GitHub
 
-Currently, two official plugins are available:
+Ako već nisi, trebaš da postaviš svoj projekat na GitHub. Evo koraka kako to da uradiš:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Kreiraj novi repozitorijum na GitHubu**:
+   - Poseti [GitHub](https://github.com) i prijavi se.
+   - Klikni na "+" u gornjem desnom kutu i izaberi "New repository".
+   - Ispuni naziv repozitorijuma, npr. `spectroom`, i klikni na "Create repository".
 
-## Expanding the ESLint configuration
+2. **Poveži lokalni projekat sa GitHub repozitorijumom**:
+   - U svom terminalu, idi do foldera svog projekta.
+   - Inicijalizuj Git repozitorijum (ako već nisi):
+     ```bash
+     git init
+     ```
+   - Poveži repozitorijum sa GitHub-om:
+     ```bash
+     git remote add origin https://github.com/korisnik/spectroom.git
+     ```
+   - Dodaj sve promene u Git:
+     ```bash
+     git add .
+     ```
+   - Napravite commit:
+     ```bash
+     git commit -m "Initial commit with README"
+     ```
+   - Pošaljite promene na GitHub:
+     ```bash
+     git push -u origin master
+     ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Sada bi tvoj **`README.md`** fajl trebalo da bude postavljen na GitHub zajedno sa ostatkom projekta!
+
+### 3. Dodatni saveti
+
+- Ako dodaješ slike u **`README.md`**, preporučujem da ih staviš u poseban folder, npr. `images/`, i onda ih ubacuješ pomoću Markdown sintakse:
+  
+```markdown
+![Alt text](./images/slika.png)
